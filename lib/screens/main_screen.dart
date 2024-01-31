@@ -23,6 +23,8 @@ class MainScreen extends StatelessWidget {
                 flex: 1,
                 child: MaterialButton(
                   onPressed: () {},
+                  shape: ,
+
                   child: FaIcon(
                     FontAwesomeIcons.bell,
                     size: 50,
