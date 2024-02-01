@@ -21,18 +21,18 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/bg1.png'),
             fit: BoxFit.cover,
           ),
         ),
-        constraints: BoxConstraints.expand(),
+        constraints: const BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 100),
+                margin: const EdgeInsets.only(top: 100),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -44,27 +44,27 @@ class _MainScreenState extends State<MainScreen> {
                         await bearBell.startEndHike(hiking);
                       },
                       color: Colors.green.withOpacity(.5),
-                      shape: CircleBorder(),
+                      shape: const CircleBorder(),
                       height: 100,
-                      child: FaIcon(
+                      child: const FaIcon(
                         FontAwesomeIcons.bell,
                         size: 50,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Column(
                       children: [
                         VolumeControl(
-                          volumeIcon: Icon(Icons.volume_up),
+                          volumeIcon: const Icon(Icons.volume_up),
                           onPressed: () {
                             bearBell.incDecVolume(VolumeCommandEnum.increase);
                           },
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         VolumeControl(
-                          volumeIcon: Icon(Icons.volume_down),
+                          volumeIcon: const Icon(Icons.volume_down),
                           onPressed: () {
                             bearBell.incDecVolume(VolumeCommandEnum.decrease);
                           },
