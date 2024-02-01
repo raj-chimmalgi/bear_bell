@@ -1,0 +1,1 @@
+enum VolumeCommandEnum { increase, decrease }
